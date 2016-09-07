@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/Libraries/angular.min.js"></script>
+        <script src="../js/Application/AccessDomElements.js"></script>
+    </head>
+    <body ng-app="XModule">
+        <div ng-controller="XModuleController">
+            <table border="2" bgcolor="#EBEADD">
+                <tr><td>Text</td><td><input type="text" ng-model="tf1" ng-change="textChange()"></td>
+                    <td>Password</td><td><input type="password" ng-model="pwd1"  ng-change="textChange()"></td></tr>
+                <tr>
+                    <td>Checkbox1</td><td><input type="checkbox" value="MyCheckbox" ng-model="c1" ng-change="checkChange()"></td>
+                    <td>Checkbox2</td><td><input type="checkbox" value="MyCheckbox" ng-model="c2" ng-change="checkChange()"></td>
+                </tr>
+                <tr><td>Radio Button</td><td><input type="radio" value="MyRadio" ng-model="r1" ng-change="radioChange()"></td>  
+                    <td>Date</td><td><input type="date" ng-model="date1"></td></tr>
+                <tr><td>Time</td><td><input type="time" ng-model="time1"></td>
+                    <td>datetime-local</td><td><input type="datetime-local" ng-model="dt1"></td></tr>
+                <tr><td>Number</td><td><input type="number" ng-model="num"></td>
+                    <td>Range</td><td><input type="range" min="1" max="100" ng-model="rang"></td></tr>
+
+            </table>
+            <br>
+            <input type="button" ng-click="buttonClick();" value="Test">
+            <table border="2" bgcolor="#EBEADD">
+                <tr><td>Text</td><td>{{tf1}}</td>
+                    <td>Password</td><td>{{pwd1}}</tr>
+                <tr>
+                    <td>Checkbox1</td><td>{{c1}}</td>
+                    <td>Checkbox2</td><td>{{c2}}</td>
+                </tr>
+                <tr><td>Radio Button</td><td>{{r1}}</td>  
+                    <td>Date</td><td>{{date1}}</td></tr>
+                <tr><td>Time</td><td>{{time1}}</td>
+                    <td>datetime-local</td><td>{{dt1}}</td></tr>
+                <tr><td>Number</td><td>{{num}}</td>
+                    <td>Range</td><td>{{rang}}</td></tr>
+            </table></div></body></html>

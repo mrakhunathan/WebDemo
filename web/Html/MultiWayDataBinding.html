@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Angular Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/Libraries/angular.min.js"></script>
+        <script>
+            var testApp = angular.module('Test', []);
+            testApp.controller('TestController', function () {
+                console.log('TestController..');
+            });
+        </script>
+    </head>
+    <body ng-app="Test">
+        <div ng-controller="TestController">
+            Input Some Text <input typ="text" ng-model="myTF">
+            <br>You have Entered...{{myTF}}
+        </div>
+    </body>
+</html>
