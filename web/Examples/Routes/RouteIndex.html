@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body ng-app="RouteGenerator">
+	<script src="scripts/angular.min.js"></script>
+	<script src="scripts/angular-route.min.js"></script>
+	<script src="../Routes/scripts/app.js"></script>
+	<script src="../Routes/scripts/main.js"></script>
+	Page Reloaded At : (Look at Console For View Update Timings - F12)
+	<p id="testTime"></p>
+	<script>
+		document.getElementById("testTime").innerHTML = Date();
+	</script>
+
+	<a href="#/Cat">Hello Cat</a>
+	<br>
+	<br>
+	<a href="#/Dog">Hello Dog</a>
+	<br>
+	<br>
+	<a href="#/Donkey">Hello Donkey</a>
+	<br>
+	<br>
+
+	<ng-view></ng-view>
+
+</body>
+</html>
