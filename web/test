@@ -1,0 +1,5 @@
+image: node:12.14.1
+all_tests:
+  script:
+   - npm install -g newman;
+   - newman run Pragash-Test.postman_collection.json
